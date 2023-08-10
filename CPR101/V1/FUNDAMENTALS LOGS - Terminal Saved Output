@@ -1,0 +1,101 @@
+Last login: Mon Jul 31 12:11:03 on ttys000
+/Users/hiran/Documents/Seneca/1st\ sem/CPR101/FINAL\ PROJECT/Hiran\ Borba\ -\ Fundamentals/V1/fundamentalsV1 ; exit;
+hiran@Hirans-Mac-mini ~ % /Users/hiran/Documents/Seneca/1st\ sem/CPR101/FINAL\ PROJECT/Hiran\ Borba\ -\ Fundamentals/V1/fundamentalsV1 ; exit;
+*** Start of Indexing Strings Demo ***
+Type not empty string (q - to quit):
+Quiet Ocean
+Type the character position whithin the string:
+8
+There character found at 8 position is 'e'
+Type not empty string (q - to quit):
+Quiet Ocean 
+Type the character position whithin the string:
+11
+Too big... Position reduced to max. availbale
+There character found at 10 position is 'n'
+Type not empty string (q - to quit):
+Quiet Ocean
+Type the character position whithin the string:
+10
+There character found at 10 position is 'n'
+Type not empty string (q - to quit):
+ 
+Type the character position whithin the string:
+2
+Too big... Position reduced to max. availbale
+There character found at -1 position is ''
+Type not empty string (q - to quit):
+
+Type the character position whithin the string:
+7
+Too big... Position reduced to max. availbale
+There character found at -1 position is ''
+Type not empty string (q - to quit):
+Quiet Ocean
+Type the character position whithin the string:
+
+There character found at 0 position is 'Q'
+Type not empty string (q - to quit):
+Quiet Ocean
+Type the character position whithin the string:
+xxx
+There character found at 0 position is 'Q'
+Type not empty string (q - to quit):
+Quiet Ocean   
+Type the character position whithin the string:
+zz
+There character found at 0 position is 'Q'
+Type not empty string (q - to quit):
+Quiet Ocean
+Type the character position whithin the string:
+-4
+Too big... Position reduced to max. availbale
+There character found at 10 position is 'n'
+Type not empty string (q - to quit):
+Quiet Ocean 
+Type the character position whithin the string:
+-7
+Too big... Position reduced to max. availbale
+There character found at 10 position is 'n'
+Type not empty string (q - to quit):
+63524190876253461524364753728172635651098273615267827364501902987651170198271829
+Type the character position whithin the string:
+There character found at 9 position is '7'
+Type not empty string (q - to quit):
+63524190876253461524364753728172635651098273615267827364501902987651170198271829
+Type the character position whithin the string:
+There character found at 9 position is '7'
+Type not empty string (q - to quit):
+63524190876253461524364753728172635651098273615267827364501902987651170198271829
+Type the character position whithin the string:
+There character found at 9 position is '7'
+Type not empty string (q - to quit):
+Q
+Type the character position whithin the string:
+9
+Too big... Position reduced to max. availbale
+There character found at 0 position is 'Q'
+Type not empty string (q - to quit):
+Q
+Type the character position whithin the string:
+5
+Too big... Position reduced to max. availbale
+There character found at 0 position is 'Q'
+Type not empty string (q - to quit):
+Q
+Type the character position whithin the string:
+1
+Too big... Position reduced to max. availbale
+There character found at 0 position is 'Q'
+Type not empty string (q - to quit):
+q
+*** End of Indexing Strings Demo ***
+
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
+

@@ -1,0 +1,34 @@
+Last login: Sun Aug  6 10:06:21 on ttys001
+/Users/hiran/Documents/IDEs/Vscode/CPR101/FINAL\ PROJECT/V2/findamentalsV2 ; exit;
+hiran@Hirans-Mac-mini ~ % /Users/hiran/Documents/IDEs/Vscode/CPR101/FINAL\ PROJECT/V2/findamentalsV2 ; exit;
+*** Start of Indexing Strings Demo ***
+Type not empty string (q - to quit):
+q
+*** End of Indexing Strings Demo ***
+
+*** Start of Measuring Strings Demo ***
+Type a string (q - to quit):
+Quiet Ocean
+The length of the 'Quiet Ocean' is 11 characters
+Type a string (q - to quit):
+
+The length of the '' is 0 characters
+Type a string (q - to quit):
+Q
+The length of the 'Q' is 1 characters
+Type a string (q - to quit):
+00000000001111111111222222222233333333334444444444555555555566666666660123456789The length of the '000000000011111111112222222222333333333344444444445555555555666666666601234567' is 78 characters
+Type a string (q - to quit):
+The length of the '89' is 2 characters
+Type a string (q - to quit):
+q
+*** End of Measuring Strings Demo ***
+
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
+
