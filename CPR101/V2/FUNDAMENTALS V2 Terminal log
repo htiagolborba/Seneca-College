@@ -1,0 +1,120 @@
+Last login: Sun Aug  6 10:06:21 on ttys001
+/Users/hiran/Documents/IDEs/Vscode/CPR101/FINAL\ PROJECT/V2/findamentalsV2 ; exit;
+hiran@Hirans-Mac-mini ~ % /Users/hiran/Documents/IDEs/Vscode/CPR101/FINAL\ PROJECT/V2/findamentalsV2 ; exit;
+*** Start of Indexing Strings Demo ***
+Type not empty string (q - to quit):
+q
+*** End of Indexing Strings Demo ***
+
+*** Start of Measuring Strings Demo ***
+Type a string (q - to quit):
+Quiet Ocean
+The length of the 'Quiet Ocean' is 11 characters
+Type a string (q - to quit):
+Q
+The length of the 'Q' is 1 characters
+Type a string (q - to quit):
+
+The length of the '' is 0 characters
+Type a string (q - to quit):
+
+The length of the '' is 0 characters
+Type a string (q - to quit):
+
+The length of the '' is 0 characters
+Type a string (q - to quit):
+
+The length of the '' is 0 characters
+Type a string (q - to quit):
+Quiet Ocean
+The length of the 'Quiet Ocean' is 11 characters
+Type a string (q - to quit):
+Q
+The length of the 'Q' is 1 characters
+Type a string (q - to quit):
+63524190876253461524364753728172635651098273615267827364501902987651170198271829
+The length of the '635241908762534615243647537281726356510982736152678273645019029876511701982718' is 78 characters
+Type a string (q - to quit):
+The length of the '9' is 1 characters
+Type a string (q - to quit):
+635241908762534615243647537281726356510982736152678273645019029876511701982718^[[C
+The length of the '635241908762534615243647537281726356510982736152678273645019029876511701982718' is 78 characters
+Type a string (q - to quit):
+The length of the ' ' is 3 characters
+Type a string (q - to quit):
+6352419087625346152436475372817263565109827361526782736450190298765117019827189 The length of the '635241908762534615243647537281726356510982736152678273645019029876511701982718' is 78 characters
+Type a string (q - to quit):
+The length of the '9' is 1 characters
+Type a string (q - to quit):
+63524190876253461524364753728172635651098273615267827364501902987651170198271829
+The length of the '635241908762534615243647537281726356510982736152678273645019029876511701982718' is 78 characters
+Type a string (q - to quit):
+The length of the '9' is 1 characters
+Type a string (q - to quit):
+635241908762534615243647537281726356510982736152678273645019029876511701982718296152410987
+The length of the '635241908762534615243647537281726356510982736152678273645019029876511701982718' is 78 characters
+Type a string (q - to quit):
+The length of the '96152410987' is 11 characters
+Type a string (q - to quit):
+0000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999
+The length of the '000000000011111111112222222222333333333344444444445555555555666666666677777777' is 78 characters
+Type a string (q - to quit):
+The length of the '788888888889999999999' is 21 characters
+Type a string (q - to quit):
+1234567890123456789023456789012345678901234567890123456789012345678901234567890 The length of the '123456789012345678902345678901234567890123456789012345678901234567890123456788' is 78 characters
+Type a string (q - to quit):
+The length of the '0' is 1 characters
+Type a string (q - to quit):
+00000000001111111111222222222233333333334444444444555555555566666666667777777777
+The length of the '000000000011111111112222222222333333333344444444445555555555666666666677777777' is 78 characters
+Type a string (q - to quit):
+The length of the '7' is 1 characters
+Type a string (q - to quit):
+00000111112222233333444445         
+The length of the '00000111112222233333444445' is 26 characters
+Type a string (q - to quit):
+00000000001111111111333333333322222222224444444444555555555566666666660789012345
+The length of the '000000000011111111113333333333222222222244444444445555555555666666666607890123' is 78 characters
+Type a string (q - to quit):
+The length of the '5' is 1 characters
+Type a string (q - to quit):
+00000000001111111111222222222233333
+The length of the '00000000001111111111222222222233333' is 35 characters
+Type a string (q - to quit):
+00000000001111111111222222222233333333334444444444555555555566666666660123456789
+The length of the '000000000011111111112222222222333333333344444444445555555555666666666601234567' is 78 characters
+Type a string (q - to quit):
+The length of the '9' is 1 characters
+Type a string (q - to quit):
+1234567890123456789023456789012345678901234567890123456789012345678901234567890    
+The length of the '123456789012345678902345678901234567890123456789012345678901234567890123456789' is 78 characters
+Type a string (q - to quit):
+The length of the '' is 0 characters
+Type a string (q - to quit):
+00000000001111111111222222222233333333334444444444555555555566666666660123456789
+The length of the '000000000011111111112222222222333333333344444444445555555555666666666601234567' is 78 characters
+Type a string (q - to quit):
+The length of the '9' is 1 characters
+Type a string (q - to quit):
+0000000000111111111122222222223333333333444444444455555555556666666666012345678 
+The length of the '000000000011111111112222222222333333333344444444445555555555666666666601234567' is 78 characters
+Type a string (q - to quit):
+The length of the '' is 0 characters
+Type a string (q - to quit):
+00000000001111111111222222222233333333334444444444555555555566666666660123456789
+The length of the '000000000011111111112222222222333333333344444444445555555555666666666601234567' is 78 characters
+Type a string (q - to quit):
+The length of the '89' is 2 characters
+
+Type a string (q - to quit):
+q
+*** End of Measuring Strings Demo ***
+
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
+
