@@ -1,0 +1,117 @@
+APS145-ZDD-W8-G5
+STUDENTS:       HIRAN BORBA
+                ELMAR JAFARLI
+		third member doesn't participate
+
+
+
+### variables:
+
+# price                     // price of product 
+# wight                     // weight of product 
+# clientOrder               // list of added itens on client order
+# skuBarcode                // item unique id on database
+# product_information       // description of skuBarcode item
+# total_amout               // sum of items * prices in clientOrder
+
+
+                        ###    MAIN PROCESS   ###
+{
+01. Start Main Process
+02. Select type of item picked:
+    A) if Perishable: Go to step #3
+    B) else (Non-Perishable): Go to step #13
+}
+   
+    {
+03. Display: Select products from the following Perishable Items (Press the 'CANCEL'button
+in case to cancel the order)                                                                     // Perishable items
+04. List of all perishable products available
+05. Check input: any product selected
+    A) if YES: Go to step #6
+    B) else: Go to step #12
+06. Select the price and weight of the selected product
+07. Display: Please weight the product
+08. Check: weight of the item
+09. Calculate total price of the weighed items  
+10. Display: Add item to your order?
+        A) if YES: Go to step #11
+        B) else (NO): Go to step #12
+11. Add Perishable item to clientOrder     
+12. Display: Do you want to add another Perishable item? 
+        A) if YES: Go back to step #4
+        B) else (NO): Go to step #13
+13. Add another type of item?
+        A) if YES: go back to step #2
+        B) else (NO): Go to step #22
+14. Check: 'CANCEL' button was pressed
+        A) if YES: go to step #24
+        B) else (NO): go to step #13       
+    }
+        
+        { 
+15. Display: Scan skuBarcode of Non-Perishable prodcut (Press the 'CANCEL'button
+in case to cancel the order)                                                                   // Non-Perishable items
+16. is skuBarcode is available in database:
+        A) if YES: Go to step #17
+        B) else: Go back to step #15
+17. Display: product_information and price
+18. Display: Add item to your order?
+        A) if YES: Go to step #19
+        B) else (NO): Go to step #20
+19. Add Non-Perishable item to clientOrder     //order
+20. Display: Do you want to add another Non-Perishable item?  //loop
+        A) if YES: go back to step #15
+        B) else (NO): go back to step #13
+21. Check: 'CANCEL' button was pressed
+        A) if YES: go to step #24
+        B) else (NO): go to step #13
+        }
+           
+           {
+22. Display: Proceed to checkout?
+        A) if YES: Go to step #25
+        B) else (NO): Go to step #23
+23. Display: Do you want to cancel this order?
+        A) if YES: Go to step #24  
+        B) else (NO): Go back to step #13
+24. Display: ORDER CANCELLED
+           }
+
+                {
+25. Checkout to payment                                                                         //payment process
+26. Display: total amout to be paid
+27. Pay the order?
+        A) if YES: Go to step #28
+        B) else (NO): Go back to step #23
+28. Select Payment option:
+        A) by CARD: Go to step #29
+        B) by CASH: Go to step #32
+29. Display: Insert/Swipe CARD      
+30. Did card was accepted?
+        A) if YES: Ask Pin number, go to step #34
+        B) else: Go to step #31
+31. Display: Payment Failed. Try again?
+        A) if YES: Go back step #28
+        B) else (NO): go back step #23
+32. Display: Insert CASH in the machine
+33. if inserted cash > total_amout of clientOrder
+        A) YES: go to step #36
+        B) else: go back to step #32
+        C) else if insert cash = total_amount of clientOrder, go to step #34
+34. Check if payment is completed?
+    A) if YES: continue to step #37
+    B) else: go to step #28
+35. Collect return CASH, then go back to step #28
+36. Collect change, go to back to step #34
+37. Print itemized receipt
+38. END
+                }
+
+
+
+
+
+
+
+

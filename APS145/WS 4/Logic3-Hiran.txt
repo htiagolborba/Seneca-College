@@ -1,0 +1,32 @@
+Start
+
+Declare player1 = P1
+Declare player2 = P2
+Define objects: rock = 1, paper = 2, Scissors = 3
+
+While Timer < 3s:
+    Display a synchronized animation where both fists move in a repetitive up and down motion
+    Wait for 1 second
+    
+End While
+
+Random select number 1-3 for each P1 and P2
+
+    which object did P1 select?
+        a=1 (go to #A)
+        b=2 (go to #B)
+        c=3 (go to #C)
+
+        #A which object did P2 select ?
+            a=3 (P1 is winner, then go to End)
+            b=2 (P2 is winner, then go to End)
+
+        #B which object did P2 select ?
+            a=1 (P1 is winner, then go to End)
+            b=3 (P2 is winner, then go to End)
+
+        #C which object did P2 select ?
+            a=2 (P1 is winner, then go to End)
+            b=1 (P2 is winner, then go to End)
+
+End

@@ -1,0 +1,32 @@
+// APS145-ZDD-W10-G5-M4
+// HIRAN BORBA
+// htlins-borba@myseneca.ca
+// ED.147216220
+
+
+// ### LOGIC 1,
+
+01. Start
+02. Declare variables baseLayer, area, basePaint, finishPaint
+03. Assign the totalArea value
+04. Display "How many base coat paints required (recommended 2)
+05. Input how many base coat required
+06. Number of base layers
+	a. If baseLayer == 0
+		a. Calculate the basePaint = (area/11) *0
+		b. Calculate the finishPaintCans= (area/16) *3
+	b. If baseLayer == 1
+		a. Calculate the basePaint = (area/11) *1
+		b. Calculate the finishPaintCans= (area/16) *2
+	c. If baseLayer >= 2
+		a. Calculate the basePaint = (area/11)* baseLayer
+		b. Calculate the finishPaintCans= (area/16) *1
+07. Is there any result in fraction?
+	a. Yes. Round up the values.
+	b. No. Go back to step #7
+08. Display the value of basePaint and finishPaint
+09. Confirm?
+	a. Yes. Go to step #10
+	b. No. Go to #5
+10. Show the results
+11. End

@@ -1,0 +1,23 @@
+001	Start
+002	Declare Human Player
+003	Start a Timer to be at 0s
+004	While Timer < 3s, Do:
+005		Display the animation that moving two fists up and down synchronously
+006		Count down for 1s
+007		If Human Player input "Rock":
+008			Display the animation that a hand making a "fist" shape
+009			End While
+010		Else if Human Player input "Paper":
+011			Display the animation that a straight open flat hand
+012			End While
+013		Else if Human Player input "Scissors":
+014			Display the animation that a the index and 2nd finger apart
+015			End While
+016	End While
+017	If Timer > 3s:
+018		Display message: "You did not make choice in 3s, would you like to try again?"
+019		If Human Player input "Yes":
+020			Go back to line 003
+021		Else:
+022			End
+023	End

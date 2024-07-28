@@ -1,0 +1,43 @@
+// APS145-ZDD-W8-G5-M4
+// HIRAN BORBA
+// htlins-borba@myseneca.ca
+// ED.147216220
+
+
+// ### LOGIC 1, NON-PERISHABLE SUBPROCESS ###
+
+function checkoutNonPerishableItem(itemCode):
+    productInfo = lookupProductInfo(itemCode)  // Black box: Lookup product info from the database.
+
+    if productInfo is not found:
+        displayErrorMessage("Item not found in the product database.")
+        return
+
+    displayProductInfo(productInfo)  // Display the product information to the user.
+
+    quantity = promptUserForQuantity()  // Prompt the user to enter the quantity of the item.
+
+        if quantity is not valid:
+        displayErrorMessage("Invalid quantity entered.")
+        return
+
+    subtotal = calculateSubtotal(productInfo.price, quantity)  // Calculate the subtotal based on the quantity and product price.
+
+        if productInfo.isTaxable:
+        tax = calculateTax(subtotal)  // Calculate the tax amount if the item is taxable.
+        else:
+        tax = 0  // No tax if the item is not taxable.
+
+    total = subtotal + tax  // Calculate the total amount including the tax.
+
+    displayCheckoutSummary(subtotal, tax, total)  // Display the checkout summary to the user.
+
+    return total  // Return the total amount as the output of the function.
+
+
+// the lookupProductInfo function is introduced as a black box function responsible for looking up the product 
+// information based on the provided itemCode. The implementation details of the lookupProductInfo function are 
+// abstracted away, as it is considered a black box. But note that the specific implementation of the lookupProductInfo 
+// function, such as how it interacts with the product database, is not included in the pseudocode. 
+// The black box function is defined to represent the functionality of retrieving the product information, 
+// while the focus is on the overall logic of the checkout process.

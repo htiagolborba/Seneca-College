@@ -1,0 +1,85 @@
+Group 5
+
+Elmar Jafarli
+Hanlun Wang
+Hiran Borba
+
+
+1. 	Start 
+2. 	Declare Plow Truck, Sand Truck and Salt Truck
+3. 	Declare Precipitation Type, Precipitation Accumulation, Temperature
+4. 	Input Precipitation Type (Snow, Ice, Mixed)
+5. 	Input Precipitation Accumulation
+6. 	Input Temperature
+7. 	If Precipitation Type = Snow ?
+8.		a. If Precipitation Accumulation <= 2.0cm ?
+9.			I. If temperature < -15.0 ?10.				Output plow = 0, sand = 1 (Light), salt = 0
+11.			II. If -15.0 <= temperature <= -7.0?
+12.				Output plow = 0, sand = 0, salt = 1 (Light)
+13.			III. If temperature > -7.0 ?
+14.				Output "No action required"
+15.		b. If 2.0cm < Precipitation Accumulation <= 5.75cm ?
+16.			I. If temperature < -15.0 ?
+17. 			Output plow = 0, sand = 1 (Normal), salt = 0
+18.			II. If -15.0 <= temperature <= -7.0?19.				Output plow = 0, sand = 0, salt = 1 (Normal)
+20.			III. If temperature > -7.0 ?
+21.				Output "No action required"
+22.		c. If 5.75cm < Precipitation Accumulation <= 15.5cm ?23.			I. If temperature < -15.0 ?
+24.				Output plow = 1, sand = 1 (Normal), salt = 0
+25.			II. If -15.0 <= temperature <= -7.0?
+26.				Output plow = 1, sand = 0, salt = 1 (Normal)
+27.			III. If temperature > -7.0 ?
+28.				Output plow = 1, sand = 0, salt = 0
+29. 	d. If 15.5cm < Precipitation Accumulation <= 42.5cm ?
+30.			I. If temperature < -15.0 ?
+31. 			Output plow = 2, sand = 1 (Normal), salt = 0
+32. 		II. If -15.0 <= temperature <= -7.0?
+33.				Output plow = 2, sand = 0, salt = 1 (Normal)
+34.			III. If temperature > -7.0 ?
+35.				Output plow = 2, sand = 0, salt = 0
+36.		e. If 42.5cm <= Precipitation Accumulation ?
+37.			OutPut "State of emergency (Organize army and other jurisdiction support) "
+38. If Precipitation Type = Ice ?
+39.		a. If Precipitation Accumulation <= 3.0 mm ?
+40.			Output "No action required"
+41.		b. If Precipitation Accumulation 3.0 mm <= ice && ice >= 5.5mm ?
+42.			I. If temperature < -15.0 ?
+43.				Output plow = 0, sand = 1 (Light), salt = 0
+44.			II. If -15.0 <= temperature <= -7.0?
+45.				Output plow = , sand = 0, salt = 1 (Normal)
+46.			III. If temperature > -7.0 ?
+47.				Output "No action required"
+48.		c. If 5.5mm <= Precipitation Accumulation && Precipitation Accumulation <= 17.0mm ?
+49.			I. If temperature < -15.0 ?
+50.				Output plow = 0, sand = 2 (Heavy), salt = 0
+51.			II. If -15.0 <= temperature <= -7.0 ?
+52.				Output plow = , sand = 0, salt = 2 (Heavy)
+53.			III. If temperature > -7.0 ?
+54.				Output plow = 0, sand = 0, salt = 1 (Heavy)
+55.		d. If 17.0 mm <= Precipitation Accumulation ?
+56.			OutPut "State of emergency (Organize army and other jurisdiction support) "
+57.	If Precipitation Type = Mixed ?
+58.		a. If Precipitation Accumulation <= 3.5cm ?
+59.			Output "No action required"
+60.		b. If 3.5cm < Precipitation Accumulation <= 5.75cm ?
+61.			I. If temperature < -15.0 ?
+62. 			Output plow = 1, sand = 1 (Light), salt = 0
+63.			II. If -15.0 <= temperature <= -7.0?64.				Output plow = 1, sand = 0, salt = 1 (Light)
+65.			III. If temperature > -7.0 ?
+66.				Output plow = 1, sand = 0, salt = 0
+67.		c. If 5.75cm < Precipitation Accumulation <= 16.5cm ?68.			I. If temperature < -15.0 ?
+69.				Output plow = 1, sand = 1 (Heavy), salt = 0
+70.			II. If -15.0 <= temperature <= -7.0?
+71.				Output plow = 1, sand = 0, salt = 1 (Heavy)
+72.			III. If temperature > -7.0 ?
+73.				Output plow = 1, sand = 0, salt = 1 (Normal)
+74. 	d. If 16.5cm < Precipitation Accumulation <= 40.0cm ?
+75.			I. If temperature < -15.0 ?
+76. 			Output plow = 2, sand = 1 (Heavy), salt = 0
+77. 		II. If -15.0 <= temperature <= -7.0?
+78.				Output plow = 2, sand = 0, salt = 1 (Heavy)
+79.			III. If temperature > -7.0 ?
+80.				Output plow = 2, sand = 0, salt = 1 (Light)
+81.		e. If 40.0cm <= Precipitation Accumulation ?
+82.			OutPut "State of emergency (Organize army and other jurisdiction support) "
+83. End

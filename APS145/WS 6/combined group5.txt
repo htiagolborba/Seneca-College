@@ -1,0 +1,91 @@
+### declare variables:
+
+# slotID          // Unique location slot ID 
+# sku             // Unique product identifier
+# quantity        // Actual quantity available 
+# maxQuantity     // Maximum machine qty that can be stocked for the slotID
+# minQuantity     // Re-order when this qty is reached 
+# price           // Vending machine price to charge customer per unit
+# description     // Product name
+ 
+
+                    ###    MAIN PROCESS   ###
+
+######  Idle/Ready software states Process ######
+
+01. Idle/Ready Process START;
+02. Triggered by button;
+        a) If Yes: got to step 04
+        b) Else: go to step 3
+03. Idle mode, go to step 6
+04. LCD screen ON
+05. Ready to receive instructions
+06. Idle/Ready Process END
+
+###### Active Process ######
+
+01. Active Process START
+02. Declare variable L (for letter input), declare variable N (for number input)
+received
+03. User input letter
+04. If variable L between A to E
+        a) Yes: go to step 6
+        b) Else: go to step 5
+05. If Letter not accepted, then go back to step 3
+06. Store user input Letter
+07. User input number
+08. If variable N between 1 to 10
+        a) Yes: go to step 10
+        b) Else: go to step 9
+09. Number not accepted, then go back to step 7
+10. Store user input number
+11. Checking slotID in database
+12. If sku has in stock
+        a) Yes: maxQuantity, go to 14
+        b) Else: minQuantity, go to 13
+13. Print "description Out of stock, please reorder", then go back to step 3
+14. Description: start LCD screen then Print description and price
+15. Confirm: user input Enter button received?
+        a) Yes: go to step 17
+        b) Else: go to 16
+16. Call CANCEL PROCESS
+17. Active Process END
+18. Call Idle/Ready Process
+
+###### Payment Process ###### 
+
+01. Payment Process START
+02. Start LCD screen, Print description and price
+03. If “PAY” button is triggered
+        a) Yes: go to step 5
+        b) Else: go to step 4
+04. Call Idle/Ready Process, then go to step 15
+05. Select Payment Method
+        a) User selected pay by credit card: go to step 6
+        b) User selected pay by bank card: go to step 7
+        c) User selected pay be NFC phone: go to step 12
+        d) User selected pay by Vending machine phone application: go to step 13
+        e) User selected pay by cash: start LCD print “$$NO CASH$$” then go back to step 5
+06. Credit Card, then go to step 8
+07. Bank card, then go to step 8
+08. Card payment method
+        a) By TAP: go to step 9
+        b) By Swipe: go to step 10
+        c) By Chip: go to step 11
+09. Active TAP function, then go to step 14
+10. Active swipe function, then go to step 14
+11. Active chip function, then go to step 14
+12. Active NFC Phone Payment, then go to step 14
+13. Active Phone application payment, then go to step 14
+14. Payment Success?
+        a) Yes: go to step 15
+        b) No: start LCD Print “Failed, please try again” then go back to step 5
+15. Done, start LCD Print "Don't forget to pick your item"
+16. Payment Process END
+
+###### CANCEL PROCESS ######
+
+01. Cancel Process START
+02. Call Idle/Ready Process
+03. Cancel Process END
+04. Call Active process

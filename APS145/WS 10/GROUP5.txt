@@ -1,0 +1,79 @@
+
+/*
+APS145-ZDD-W10-G5
+HIRAN BORBA
+ELMAR JAFARLI
+FATIMA BAIG
+
+### Variables ###
+
+wall_H;                             // wall height
+wall_L;                             // wall length
+door_L;                             // door length
+door_W;                             // door width
+window_L;                           // window length
+totalW_surf;                        // total wall surface
+roomNum;                            // number of rooms
+totalUnpainted;                     // Total Unpainted area
+ceiling_L;                          // ceiling length 
+ceiling_W;                          // ceiling_Width
+totalPainted;                       // total_painted_area
+basePcount;                         // base paint count
+basePcans;                          // base paint cans
+base_paint_cost;                    // Base paint cost
+finishPcount;                       // finishing paint count
+finishPcans;                        // finishing paint cans
+finising_paint_cost                 // finish paint cost
+windowNum;                          // Number of windows
+ceiling_area;                       // Total Ceiling area
+
+*/
+
+
+//                                                 ################### Main Process ###################
+
+{
+01. START MAIN PROCESS
+
+02. Define variables:   wall_H; wall_L; door_L; door_W; window_L;totalW_surf, roomNum, 
+                        totalUnpainted; ceiling_L; ceiling_W; totalPainted; basePcount; 
+                        basePcans; finishPcount; finishPcans; base_paint_cost; estimate_Cost; 
+                        finishing_paint_cost; tax; Total_cost.
+                        
+
+03. Input the room dimensions (door, window, number of rooms, number of windows and doors).
+
+04. Calculate total area of wall surface: 
+                                            totalW_surf = (wall_H * wall_L) * roomNum;
+05. Calculate total area of window and door (not be painted): 
+                                            totalUnpainted = ((door_L * door_W) * number_of doors) + ((window_L * window_width) * windowNum).
+
+06. Do include to paint the ceiling?
+    If Yes, calculate the total area of the ceiling and total painted:    
+                                            ceiling_area = (ceiling_L * ceiling_W) * roomNum                                                                         
+    else, go to step 07.
+
+07. Calculate the Area total to be painted:
+                                            totalPainted = (totalW_surf + ceiling_area) – totalUnpainted.
+
+08. Calculate the basePcans = totalPainted / 11
+09.     Round up value of the basePcans
+
+10. Calculate the finishPcans = totalPainted / 16
+11.     Round up value of the finishPcans
+
+12. Input how many coats of the base paint (basePcount). If they choose 1 or 2, suggest default number of 2 coats.
+13.     If the basePcount = 2, calculate: 
+                                            base_paint_cost = (((basePcans * 2) * 46.25) + (finising_paint_cost = (finishPcans * 54.50)));
+14.     Else if the basePcount = 1, calculate: 
+                                            base_paint_cost = (basePcans * 46.25) + ((finishPcans * 2) * 54.50);
+15.     Else basePcount = 0, calculate:
+                                            finishing_paint_cost = ((finishPcans * 3) * 54.50);
+
+16. Calculate estimate cost:                estimate_Cost = (base_paint_cost + finishing_paint_cost)
+17. Calculate tax:                          tax = (estimate_Cost * 0.13)
+18. Calculate Total amount:                 Total_cost = (estimate_cost + Tax).
+
+19. Print the receipt
+20. End
+}
